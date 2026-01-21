@@ -40,4 +40,4 @@ The final output is a **complete personal website built using only HTML**, prepa
 
 👨‍🎓 **Student Name:** Lenin Maharjan
 
-📅 **Year:** 2026
+📅 **Year:** 2026 Jan 17th

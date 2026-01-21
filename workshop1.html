@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal Landing Page</title>
+    <meta name="description" content="Student portal landing page with announcements, navigation, and login form.">
+    <meta name="author" content="Lenin Maharjan">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 24px;
+            background-color: #2f5f4f;
+            text-align: center;
+        }
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        fieldset {
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        legend {
+            font-weight: bold;
+            color: #007bff;
+            padding: 0 10px;
+        }
+        fieldset label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        fieldset input {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Student Portal</h1>
+    <p>Welcome to your student dashboard</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#announcements">Announcements</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#grades">Grades</a></li>
+        <li><a href="#profile">Profile</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="announcements">
+        <h2>Latest Announcements</h2>
+        <article>
+            <h3>Semester Registration Open</h3>
+            <p>Registration for the upcoming semester is now open. Please complete your course selection by the deadline.</p>
+            <time datetime="2026-01-20">January 20, 2026</time>
+            <button id="ann" class="btn">Read More</button>
+        </article>
+        <article>
+            <h3>Library Hours Extended</h3>
+            <p>The university library will have extended hours during exam week. Check the library website for details.</p>
+            <time datetime="2026-01-15">January 15, 2026</time>
+        </article>
+    </section>
+
+    <section id="login-form">
+        <h2>Student Login</h2>
+        <form action="/login" method="post">
+            <fieldset>
+                <legend>Login Credentials</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Login</button>
+            </fieldset>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Bedfordshire University. All rights reserved.</p>
+    <address>
+        Contact: <a href="https://breo.beds.ac.uk/?new_loc=%2Fultra%2Fcourses%2F_62009086_1%2Foutline%2Ffile%2F_10228920_1" target="_blank">support@bedfordshire.edu</a>
+    </address>
+</footer>
+
+</body>
+</html>
